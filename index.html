@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Weight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Know Your Weight</h1>
+        </header>
+        <main>
+            <label for="planetSelect">Select a planet:</label>
+            <select id="planetSelect">
+                <option value="3.8">Mercury</option>
+                <option value="9.1">Venus</option>
+                <option value="3.8">Mars</option>
+                <option value="23.4">Jupiter</option>
+                <option value="9.3">Saturn</option>
+                <option value="9.2">Uranus</option>
+                <option value="11.2">Neptune</option>
+            </select>
+            <label for="massInput">Enter your mass on Earth (kg):</label>
+            <input type="number" id="massInput" placeholder="Enter your mass">
+            <button class="button button-primary" id="calculateBtn">Calculate</button>
+            <p id="result"></p>
+            <button class="button button-secondary" id="clearBtn">Clear</button>
+        </main>
+    </div>
+    <div class="logo logo-left" id="logoLeft">
+        <img src="sgvplogo.png" alt="Left Logo">
+    </div>
+    <div class="logo logo-right" id="logoRight">
+        <img src="isrologo-removebg-preview.png" alt="Right Logo">
+    </div>
+    <button class="button button-primary" id="themeToggle">Toggle Theme</button>
+
+    <div class="background-slider">
+        <div class="background-slide active">
+            <img src="mercury2.jpg" alt="Background Image 1">
+        </div>
+        <div class="background-slide">
+            <img src="venusm.jpg" alt="Background Image 2">
+        </div>
+        <div class="background-slide">
+            <img src="mars.jpg" alt="Background Image 3">
+        </div>
+        <div class="background-slide">
+            <img src="jupii.jpg" alt="Background Image 4">
+        </div>
+        <div class="background-slide">
+            <img src="saturn.jpg" alt="Background Image 5">
+        </div>
+        <div class="background-slide">
+            <img src="uranus.jpg" alt="Background Image 6">
+        </div>
+        <div class="background-slide">
+            <img src="nepi.jpg" alt="Background Image 7">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
