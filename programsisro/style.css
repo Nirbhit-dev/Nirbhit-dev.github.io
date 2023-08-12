@@ -1,0 +1,170 @@
+
+       /* Reset some default styling */
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Your CSS styles here */
+        .background-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-slide {
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+    background-size: cover; /* Add this line */
+    background-position: center; /* Add this line */
+}
+
+        .background-slide.active {
+         opacity: 1;
+         }
+         @keyframes slideAnimation {
+            0%, 100% { transform: translateX(0); }
+            14.28% { transform: translateX(0); }
+            28.56% { transform: translateX(-100%); }
+            42.84% { transform: translateX(-200%); }
+            57.12% { transform: translateX(-300%); }
+            71.40% { transform: translateX(-400%); }
+            85.68% { transform: translateX(-500%); }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            position: relative; /* For positioning the logos */
+        }
+        .logo-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 300px; /* Adjust this value as needed */
+            margin-top: 20px;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            
+            border-radius:0%;
+            position: absolute;
+            top: 20px;
+        }
+
+        .logo-left {
+            left: 20px;
+        }
+
+        .logo-right {
+            right: 20px;
+        }
+
+        .container {
+            background: #ffffff43;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.697);
+            width: 400px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0; /* Adjusted margin */
+            border: 1px solid #040000;
+            border-radius: 5px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .button-primary {
+            background-color: hsl(211, 77%, 42%);
+            color: #fff;
+        }
+
+        .button-secondary {
+            background-color:   hsl(211, 77%, 42%);
+            color: #ffffff;
+        }
+
+        .button:hover {
+            opacity: 0.8;
+        }
+
+        #result {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        #themeToggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #themeToggle:hover {
+            opacity: 0.8;
+        }
+
+        /* Dark theme styles */
+        .dark-theme {
+            background: #3333338d;
+            color: #fff;
+        }
